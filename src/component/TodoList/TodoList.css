@@ -1,0 +1,129 @@
+.list {
+    width: 100%;
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+li {
+    list-style: none;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+    width: 50%;
+    padding-left: 10px;
+    background-color: rgb(35, 31, 31);
+    color: white;
+    border-radius: 3px;
+}
+
+p {
+    display: flex;
+    align-items: center;
+    width: 10%;
+    justify-content: space-around;
+}
+
+p button {
+    cursor: pointer;
+    color: white;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    font-size: 15px;
+    border-radius: 3px;
+}
+
+p button:nth-child(1) {
+    background-color: blueviolet;
+}
+
+p button:nth-child(2) {
+    background-color: rgb(207, 74, 74);
+}
+
+@media (max-width: 458px) {
+    /* Adjusting for mobile view under 458px */
+
+    .list {
+        width: 100%;
+    }
+
+    ul {
+        width: 100%;
+        display: block;
+        justify-content: start;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+    }
+
+    li {
+        list-style: none;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 2px;
+        width: 100%; /* Make list items full width */
+        padding-left: 10px;
+        background-color: rgb(35, 31, 31);
+        color: white;
+        border-radius: 3px;
+    }
+
+    p {
+        width: auto; /* Allow the buttons to adjust based on content */
+        margin-right: 10px; /* Optional: Some space for better alignment */
+    }
+
+    p button {
+        font-size: 14px; /* Slightly smaller font on mobile */
+        padding: 4px 8px; /* Smaller button padding */
+    }
+
+    p button:nth-child(1) {
+        background-color: blueviolet;
+    }
+
+    p button:nth-child(2) {
+        background-color: rgb(207, 74, 74);
+    }
+}
+
+@media (max-width: 450px) {
+    /* Adjusting for even smaller screens under 450px */
+    ul {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    li {
+        height: 50px; /* Adjust item height for better visibility */
+        font-size: 14px; /* Adjust text size to fit better */
+        margin: 5px 0; 
+        width: 96%;
+        margin: 2px;
+    }
+
+    p {
+        width: auto; /* Allow buttons to adjust */
+        
+         justify-content: space-around;
+         
+    }
+
+    p button {
+        padding: 3px 6px; /* Smaller padding */
+        font-size: 13px;
+        margin-right: 5px;
+    }
+}

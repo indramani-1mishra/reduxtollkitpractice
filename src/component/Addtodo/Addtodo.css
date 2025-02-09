@@ -1,0 +1,67 @@
+form
+{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: 2%;
+
+}
+input
+{
+    padding: 10px;
+    margin: 10px;
+    width: 20%;
+     border: none;
+    background-color: rgb(45, 45, 60);
+    color: white;
+    border-radius: 5px;
+    outline: none;
+    text-transform: capitalize;
+    box-shadow: 0px 0px 0px 2px rgb(26, 80, 181);
+}
+form>button
+{
+    padding: 10px 20px;
+    background-color: rgb(88, 102, 170);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form>button:hover
+{
+    
+    background-color: rgb(76, 85, 152);
+    transition: background-color 0.3s ease;
+}
+@media (max-width: 450px)
+{
+    form
+{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-left: 0;
+
+}
+ input{
+    width: 70%;
+    margin-right: 2px;
+ }   
+ form>button{
+    padding: 0px 0px;
+    background-color: rgb(88, 102, 170);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    padding: 5px;
+   
+}
+
+}

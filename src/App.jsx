@@ -7,10 +7,10 @@ function App() {
  
 
   return(
-  <>
+  <div className='itemcontainer'>
      <AddTodo/>
      <TodoList />
-  </>
+  </div>
   );
 }
 

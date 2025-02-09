@@ -1,0 +1,23 @@
+.itemcontainer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgb(20, 76, 122);
+}
+@media (max-width: 457px) {
+  
+    .itemcontainer
+    {
+     display: block;
+
+    margin: 0;
+    padding: 0;
+
+
+    }
+
+
+}

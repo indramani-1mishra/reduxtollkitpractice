@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux"
 import { addTodo } from "../../store/Store";
+import './Addtodo.css';
 
 
 export default function AddTodo() {
@@ -20,13 +21,13 @@ export default function AddTodo() {
     }
 
   return (
-    <form>
+    <form className="from1">
       <input type="text"
         placeholder="Add a todo..."
         value={input}
         onChange={(e) => SetInput(e.target.value)}
       />
-      <button type="submit" onClick={submitHandler} >ADD</button>
+      <button type="submit" onClick={submitHandler} >ADD Todo</button>
     </form>
   )
 }
